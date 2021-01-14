@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: latha;
+                color:white;
+                background: url(food10.jpg)no-repeat;
+                background-size: cover;
+            }
+        .wd{
+            width: 300px;
+            height: 539px;
+            background-color:black;
+            opacity: 0.9;
+            padding: 55px;
+        }
+        .wd h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 100px;
+        }
+        .wd h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        .gg{
+            align-self: center;
+            width: 300px;
+            height: 539px;
+            background-color:black;
+            opacity: 0.9;
+            padding: 55px;
+        }
+ 
+     
+        </style>
+<script>
+function validateForm()
+{
+var x=document.forms["contact"]["user"].value;
+var y=document.forms["contact"]["texta"].value;
+if (x == "" || y=="")
+{
+alert ("name or message field is required.");
+return false;
+}
+alert ("We are thankful for your suggestions. Voila! ");
+}
+function aa()
+{
+ <a.href="index.html">;
+}
+</script>
+    </head>
+    <body>
+       <div class="wd">
+           <h1>We will help you in all the aspects</h1>
+            <div class="opt">
+                <form action="index.html" name="contact" onsubmit="return validateForm()">
+                    Name:<br><br>
+                    <input type="text" name="user" placeholder="Username" required><br><br>
+                    E-mail address:<br><br>
+                    <input type="text" name="email" placeholder="Email"><br><br>
+                    Message:<br><br>
+                    <textarea name="texta" cols="30" rows="10" id="b" required></textarea><br><br>
+                    <input type="submit">
+		    <input type="button" value="SKIP" onclick="window.open('index.html')">
+                </form>
+            </div>
+       </div>
+    </body>
+    <body>
+       <center> 
+       <div class="gg">
+           <h1>For any Query u can contact us :</h1>
+           Email Address:<br><br>
+           mkrestaurant@gmail.com<br><br>
+           Contact Number:<br><br>
+           7085050742<br>
+           8970070542<br><br>
+           Address:<br><br>
+           Sec 17 near housing board, chandigarh
+       </div>
+       </center>
+    </body>
+</html>

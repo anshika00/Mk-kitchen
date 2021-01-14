@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+        body{
+            
+            font-family: latha;
+                color:white;
+                background: url(t.jpg)no-repeat;
+                background-size: cover;
+        }
+        .m{
+            align-self: center;
+            width: 400px;
+            height: 500px;
+            background-color: black;
+            opacity: 0.9;
+            padding: 55px;
+        }
+        </style>
+
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["fff"].value;
+if (x == "")
+{
+alert ("not a valid password");
+return false;
+}
+alert ("You have entered the Big MK KITCHEN! Enjoy your ride ;) ");
+}
+</script>
+    </head>
+    <body>
+<form action="index.html" method="get" name="myForm" onsubmit="return validateForm()">
+        <div class="m">
+        <h1>SIGN-IN</h1>
+        <div class="ab">
+        Name:<br>
+        <input type="text" name="f" placeholder="Name here" required><br><br>
+        E-Mail:<br>
+        <input type="email" name="f" placeholder="email here" required><br><br>
+        Password:<br>
+        <input type="password" name="fff" placeholder="password here"><br><br><br><br>
+        <input type="submit" value="submit">
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

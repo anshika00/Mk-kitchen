@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+        body{
+            
+            font-family: latha;
+                color:white;
+                background: url(food.jpg)no-repeat;
+                background-size: cover;
+        }
+        .m{
+            width: 1200px;
+            height: 500px;
+            background-color: black;
+            opacity: 0.9;
+            padding: 55px;
+        }
+        </style>
+<script>
+function validateForm()
+{
+var x=document.forms["sugg"]["texta"].value;
+if (x == "")
+{
+alert ("suggestion is required.");
+return false;
+}
+alert ("We are thankful for your suggestions. Voila! ");
+}
+
+</script>
+    </head>
+    <body>
+<form action="index.html" name="sugg" onsubmit="return validateForm()">
+        <div class="m">
+        <h1>SUGGESTIONS:</h1>
+        <div class="ab">
+        Name:<br><br>
+        <input type="text" name="f"><br><br>
+        Suggestion:<br><br>
+        <textarea name="texta" cols="30" rows="10" ></textarea><br><br>
+        E-Mail:<br><br>
+        <input type="email" name="g"><br><br>
+        
+            <input type="submit" value="submit">
+	    <input type="button" value="SKIP" onclick="window.open('index.html')">
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

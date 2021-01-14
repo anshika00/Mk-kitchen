@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+        body{
+            
+            font-family: latha;
+                color:white;
+                background: url(food13.jpg)no-repeat;
+                background-size: cover;
+        }
+        .m{
+            width: 1200px;
+            height: 500px;
+            background-color: black;
+            opacity: 0.9;
+            padding: 55px;
+        }
+        </style>
+    </head>
+<script>
+            function f()
+            {
+                alert('Your Table has been successfully booked');
+            }
+            </script>
+    <body>
+        <div class="m">
+        <h1>RESERVE YOUR TABLE NOW</h1>
+        <div class="ab">
+        <form action="menu.html">
+        Name:<br><br>
+        <input type="text" name="f" required><br><br>
+        E-Mail:<br><br>
+        <input type="email" name="g" ><br><br>
+        Type of table:<br><br>
+        <select name="table" required>
+        <option value="a">4-member table</option>
+        <option value="b">Couple table</option>
+        <option value="c">joint family table</option><br><br>
+        </select><br><br>
+        Time of reservation:<br><br>
+        Arrival time: <input type="time" name="r" required><br><br>
+        Leaving time: <input type="time" name="l" required><br><br>
+        Telephone Number:<br><br>
+        <input type="number" name="fff" maxlength="10" required><br><br>
+        <button onclick="f()" id="me">PROCEED</button>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
